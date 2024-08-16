@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Practice</title>
+
+  <link rel="stylesheet" href="/flashcards-bootstrap/styles/styles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Stats/Timer/Flashcard Container -->
+  <div class="container-fluid bg-dark">
+    <!-- Stats Row -->
+    <div class="row">
+      <button class="col-4 bg-secondary" id="points-display">Points</button>
+      <button class="col-4 bg-secondary" id="student-name-display">Student</button>
+      <button class="col-4 bg-secondary" id="proficiency-display">Proficiency</button>
+    </div>
+
+    <!-- Timer-Bar Row -->
+    <div class="row">
+      <div class="progress col-12">
+        <div class="progress-inner"></div>
+      </div>
+    </div>
+
+    <!-- Flashcard Display Row -->
+    <div class="row">
+      <button class="btn-flashcard col-12 text-center bg-warning p-5" id="flashcard-display">Flashcard</button>
+    </div>
+    <!-- Response and Answer Display Row  -->
+    <div class="row">
+      <button class="response-display col-6 text-center bg-primary p-5" id="response-display">Response</button>
+      <button class="answer-display col-6 text-center bg-info p-5" id="answer-display">Answer</button>
+    </div>
+  </div>
+
+  <!-- Keypad Container -->
+  <div class="container-fluid bg-secondary">
+    <div class="row">
+      <button class="col-3 btn-sm btn-danger rounded-pill"
+      id="btn-pi">Pi</button>
+      <button class="col-3 btn-sm btn-danger rounded-pill"
+      id="btn-sqrt">Sqrt</button>
+      <button class="col-3 btn-sm btn-danger rounded-pill"
+      id="btn-exp">^</button>
+      <button class="col-3 btn-sm btn-success rounded-pill"
+      id="btn-fraction">/</button>
+    </div>
+
+    <div class="row">
+      <button class="col-3 btn-lg btn-warning p-1 rounded-pill"
+      id="btn-7">7</button>
+      <button class="col-3 btn-lg btn-warning p-1 rounded-pill"
+      id="btn-8">8</button>
+      <button class="col-3 btn-lg btn-warning p-1 rounded-pill"
+      id="btn-9">9</button>
+      <button class="col-3 btn-lg btn-success p-1 rounded-pill"
+      id="btn-times">*</button>
+    </div>
+
+    <div class="row">
+      <button class="col-3 btn-lg btn-warning p-4 rounded-pill"
+      id="btn-4">4</button>
+      <button class="col-3 btn-lg btn-warning p-4 rounded-pill"
+      id="btn-5">5</button>
+      <button class="col-3 btn-lg btn-warning p-4 rounded-pill"
+      id="btn-6">6</button>
+      <button class="col-3 btn-lg btn-success p-4 rounded-pill"
+      id="btn-minus">-</button>
+    </div>
+
+ <div class="row">
+      <button class="col-3 btn-lg btn-warning p-4 rounded-pill" id="btn-1">1</button>
+      <button class="col-3 btn-lg btn-warning p-4 rounded-pill" id="btn-2">2</button>
+      <button class="col-3 btn-lg btn-warning p-4 rounded-pill"
+      id="btn-3">3</button>
+      <button class="col-3 btn-lg btn-success p-4 rounded-pill"
+      id="btn-plus">+</button>
+    </div>
+
+    <div class="row">
+      <button class="col-3 btn-lg btn-danger p-4 rounded-pill" id="btn-decimal">.</button>
+      <button class="col-3 btn-lg btn-warning p-4 rounded-pill" id="btn-0">0</button>
+      <button class="col-3 btn-lg btn-danger p-4 rounded-pill"
+      id="btn-percent">%</button>
+      <button class="col-3 btn-lg btn-primary p-4 rounded-pill" id="btn-go">GO!</button>
+    </div>
+
+  </div>
+ 
+ <script src="/flashcards-bootstrap/scripts/scripts.js"></script>
+ <script src="/flashcards-bootstrap/scripts/scripts2.js"></script>
+ <script src="/flashcards-bootstrap/scripts/scriptsData.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+ <!-- Homework Begins Here -->
+  <!-- <div class="container bg-dark">
+    <div class="row">
+      <div class="col-6 bg-success">600 x 400</div>
+      <div class="col-6">
+        <div class="row">
+          <div class="col-6 bg-info">300 x 205</div>
+          <div class="col-6 bg-danger">300 x 205</div>
+        </div>
+        <div class="row">
+          <div class="col-6 bg-warning">300 x 205</div>
+          <div class="col-6 bg-info">300 x 205</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">  
+      <div class="col-6">
+        <div class="row">
+          <div class="col-6 bg-info">300 x 205</div>
+          <div class="col-6 bg-danger">300 x 205</div>
+        </div>
+        <div class="row">
+          <div class="col-6 bg-warning">300 x 205</div>
+          <div class="col-6 bg-info">300 x 205</div>
+        </div>
+      </div>
+      <div class="col-6 bg-success">600 x 400</div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+ -->
